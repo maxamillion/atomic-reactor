@@ -8,10 +8,9 @@ install:
   - "pip install -r requirements.txt"
   - "pip install -r tests/requirements.txt"
   - "pip install pytest-cov coveralls"
+  - "sudo pip install git+https://github.com/TomasTomecek/dockpulp"
 # command to run tests
 script: "py.test -vv tests --cov atomic_reactor"
-# run in a docker container
-sudo: false
 notifications:
   email: false
 after_success: "coveralls"
