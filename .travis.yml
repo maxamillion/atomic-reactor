@@ -9,6 +9,7 @@ install:
   - "pip install -r tests/requirements.txt"
   - "pip install pytest-cov coveralls"
   - "sudo pip install git+https://github.com/TomasTomecek/dockpulp"
+  - "python -c 'import dockpulp'"
 # command to run tests
 script: "py.test -vv tests --cov atomic_reactor"
 notifications:
