@@ -32,7 +32,7 @@
 
 Name:           %{project}
 Version:        1.6.0
-Release:        4%{?dist}
+Release:        4.1%{?dist}
 
 Summary:        Improved builder for Docker images
 Group:          Development/Tools
